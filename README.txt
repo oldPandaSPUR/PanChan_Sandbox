@@ -1,3 +1,14 @@
+*****Execution:
+Setup:
+	Open Terminal.	
+	Change directory to where PanChan_Sandbox.cpp and makefile are located.
+	To setup, run command:
+		make
+	To use sandbox, run command:
+		./PanChan_Sandbox.exe [program_file]
+	See documentation below for how to format your program file.
+
+
 *****Design:
 There are 11 General Purpose Registers, indexed from 0 to 10.
 GPR0 is the Return Register.
