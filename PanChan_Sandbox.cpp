@@ -30,7 +30,7 @@ public:
 		}
 		rValid[0] = 1;
 		//same as above, but for "memory"
-		for(int i = 0; i < 63; i++) {
+		for(int i = 0; i < 64; i++) {
 			Mem.push_back(0);
 			mValid.push_back(0);
 		}
@@ -47,7 +47,7 @@ public:
 //		}
 	}
 
-	int run() {
+	void run() {
 		//loop through all instructions
 		for(int i = 0; i < Inst.size(); i++){
 			stringstream currLine(Inst[i]);
@@ -109,7 +109,6 @@ public:
 			//Instruction not found
 			else if(currInst != "") throw 2;
 		}
-		return 1; //1 for successful
 	}
 
 	void printResults() {
